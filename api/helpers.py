@@ -13,7 +13,7 @@ def init_request_parser(predictor):
                 column_name,
                 type=column_type,
                 required=True,
-                location='args'
+                location='json'
             )
 
     return parser

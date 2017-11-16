@@ -14,7 +14,7 @@ class Heartbeat(Resource):
 
 
 class Predictor(Resource):
-    def get(self, predictor_name):
+    def post(self, predictor_name):
         try:
             predictor = get_predictor(predictor_name, API_VERSION)
         except AttributeError:
